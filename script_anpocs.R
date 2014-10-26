@@ -51,8 +51,8 @@ plot( # NEP federal vs. NEP estadual todo o periodo com reg. line.
   bd1$NEP_FED,
   pch = 20,
   cex = 1.3,
-  xlab = "NEP Federal",
-  ylab = "NEP Estadual",
+  xlab = "NEP Estadual",
+  ylab = "NEP Federal",
   cex.axis = 0.8,
   col = "#1E90FF",
   bty = "n",
@@ -73,7 +73,7 @@ plot( # Volatilidade federal vs. volatilidaed estadual todo o periodo com reg. l
   cex.axis = 0.8,
   col = "#1E90FF",
   bty = "n",
-  main = "1982-2014")
+  main = "1986-2014")
 
 abline(m2, lwd=2, col="#303030")
 legend("topright", bty="n", cex=0.7, col="#303030", legend=paste("R² =", format(summary(m2)$adj.r.squared, digits=2)))
@@ -156,7 +156,7 @@ plot( # volatilidade estadual vs. volatilidade federal todo o periodo.
   cex.axis = 0.8,
   col = "#1E90FF",
   bty = "n",
-  main = "1982-2014")
+  main = "1986-2014")
 
 plot( # Volatilidade estadual vs. Volatilidade federal 1990
   bd1$VOLAT_EST[!bd1$ANO %in% anos],
